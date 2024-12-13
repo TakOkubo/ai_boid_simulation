@@ -19,12 +19,12 @@
 - `./model/ai_agent.py`では下記のようにパスを定義しています。使用するAIモデルについては、`use_model`にて選択してください。
 ```python:./model/ai_agent.py
 Gemma2 = {
-	"model_path" : "./ai_model/mmnga/gemma-2-2b-it-Q4_K_M.gguf",
+	"model_path" : "./ai_model/mmnga/gemma-2-2b-it-gguf/gemma-2-2b-it-Q4_K_M.gguf",
 	"chat_format" : "gemma"
 }
 
 Llama3 = {
-	"model_path" : "./ai_model/bartowski/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+	"model_path" : "./ai_model/bartowski/Llama-3.2-1B-Instruct-GGUF/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
 	"chat_format" : "llama-3"
 }
 
