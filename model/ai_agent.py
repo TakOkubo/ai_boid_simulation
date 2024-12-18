@@ -18,8 +18,8 @@ use_model = Llama3
 
 prompts = [
 		{
-			"role": "user",
-			"content":
+			"role": "system",
+			"content": 
 				"I want to determine the angle and velocity of an agent on a 2D plane based on the following rules:\n" + 
 				"・The agent moves away from enemies based on their relative distances.\n" + 
 				"・The agent moves toward foods based on their relative distances.\n" + 
@@ -29,9 +29,11 @@ prompts = [
 				"・The agent's angle and velocity should also be returned in JSON format.\n" + 
 				"・Do not include any extra text or explanations.\n" +
 				"Input example:{ 'enemies': [{'angle': 0, 'distance': 2}, {'angle': 10, 'distance': 10}], 'foods': [{'angle': 45, 'distance': 400}, {'angle': 5, 'distance': 500}] }\n"
-				"Output example:{'angle': 45, 'velocity': 4.5}\n" +
-				"------------------------------------------\n" +
-				'{ "enemies": [], "foods": [] }'
+				"Output example:{'angle': 45, 'velocity': 4.5}"
+		},
+		{
+			"role": "user",
+			"content":'{ "enemies": [], "foods": [] }'
 		},
 		{
 			"role": "assistant",
