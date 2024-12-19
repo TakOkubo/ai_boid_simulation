@@ -36,6 +36,7 @@ use_model = Llama3
 
 ### 実行
 main.pyを実行すると、PyGameによるシミュレーションが実施できます。
+
 ※ Anacondaをインストールしていることが前提です。  
 ※ 実行するためのライブラリはrequirements.txtにありますので、適宜インストールしてください。
 ```powershell
